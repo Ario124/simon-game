@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+        <title>Simon Game</title>
+        
+
+        <audio id="clip1">
+            <source src="assets/audio/simonSound1.mp3"></source>
+        </audio>
+        <audio id="clip2">
+            <source src="assets/audio/simonSound2.mp3"></source>
+        </audio>
+        <audio id="clip3">
+            <source src="assets/audio/simonSound3.mp3"></source>
+        </audio>
+        <audio id="clip4">
+            <source src="assets/audio/simonSound4.mp3"></source>
+        </audio>
+    </head>
+    
+    <body>
+        <div>
+            <h1 class="title">Simon Game!</h1>    
+        </div>
+        
+
+      	<div class="game">
+      		<div class="button" id="upperLeft"></div>
+      		<div class="button" id="upperRight"></div>
+      		<div class="button" id="bottomLeft"></div>
+      		<div class="button" id="bottomRight"></div>
+      		<div class="menu">
+      			<h2 class="title style">Simon</h2>
+      			<div class="controls buttonsplace">
+      				<input type="checkbox" class="toggle" id="on"><span><strong>ON/OFF</strong></span>
+      				<button class="start-button" id="start">Start</button>
+      				<input type="checkbox" class="toggle" id="strict"><span><strong>STRICT</strong></span>
+      			</div>
+      			<div id="turn"></div>
+      			<div><strong>COUNT</strong></div>
+      		</div>
+      	</div>
+      
+      
+      
+      <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
