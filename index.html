@@ -3,36 +3,36 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
         <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
         <title>Simon Game</title>
         
-
-        <audio id="clip1">
+        <!---=======AUDIO FILES WITH ID TO CALL ON ACTION=======--->
+        
+        <audio id="simonsound1">
             <source src="assets/audio/simonSound1.mp3"></source>
         </audio>
-        <audio id="clip2">
+        <audio id="simonsound2">
             <source src="assets/audio/simonSound2.mp3"></source>
         </audio>
-        <audio id="clip3">
+        <audio id="simonsound3">
             <source src="assets/audio/simonSound3.mp3"></source>
         </audio>
-        <audio id="clip4">
+        <audio id="simonsound4">
             <source src="assets/audio/simonSound4.mp3"></source>
         </audio>
     </head>
-    
     <body>
         <div>
             <h1 class="title">Simon Game!</h1>    
         </div>
         
-
+        <!---=======SIMON GAME PLATFORM=======--->
+        
       	<div class="game">
-      		<div class="button" id="upperLeft"></div>
-      		<div class="button" id="upperRight"></div>
-      		<div class="button" id="bottomLeft"></div>
-      		<div class="button" id="bottomRight"></div>
+      		<div class="game-button" id="uLeft"></div>
+      		<div class="game-button" id="uRight"></div>
+      		<div class="game-button" id="bLeft"></div>
+      		<div class="game-button" id="bRight"></div>
       		<div class="menu">
       			<h2 class="title style">Simon</h2>
       			<div class="controls buttonsplace">
@@ -44,10 +44,6 @@
       			<div><strong>COUNT</strong></div>
       		</div>
       	</div>
-      
-      
-      
       <script src="assets/js/main.js"></script>
-
     </body>
 </html>

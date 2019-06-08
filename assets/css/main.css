@@ -1,7 +1,73 @@
+            /*==========GOOGLE FONT============*/
+
 @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
 
 body {
     background-color: #4c5655;
+}
+            /*==========TITLES============*/
+
+.title {
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Cinzel", sans-serif;
+    font-weight: 600;
+    font-size: 65px;
+    margin-bottom: 30px;
+}
+
+            /*==========GAME BUTTONS============*/
+            
+            
+.game {
+    margin: 0 auto;
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.game-button {
+    margin: 0 auto;
+    float: left;
+    position: relative;
+    height: 393px;
+    width: 393px;
+    border: 2px solid white;
+}
+
+#uLeft{
+    background-color: green;
+    border-radius: 100% 0 0 0;
+}
+
+#uRight{
+    background-color: darkred;
+    border-radius: 0 100% 0 0;
+}
+
+#bLeft{
+    background-color: olive;
+    border-radius: 0 0 0 100%;
+}
+
+#bRight{
+    background-color: darkblue;
+    border-radius: 0 0 100% 0;
+}
+
+            /*==========MENU============*/
+
+.menu {
+    height: 340px;
+    width: 340px;
+    border-radius: 50%;
+    background-color: grey;
+    position: absolute;
+    top: 28%;
+    left: 27%;
+    border: 7px double black;
+    text-align: center;
 }
 
 .buttonsplace {
@@ -13,41 +79,9 @@ body {
     padding:15px;
 }
 
-
-.title {
-    margin: 0 auto;
-    text-align: center;
-    font-family: "Cinzel", sans-serif;
-    font-weight: 600;
-    font-size: 65px;
-    margin-bottom: 30px;
-}
-
 .style {
     font-size: 50px;
     margin-top: 25px;
-}
-
-.container {
-    margin: 0 auto;
-}
-
-.game {
-    margin: 0 auto;
-    width: 800px;
-    height: 800px;
-    border-radius: 50%;
-    position: relative;
-}
-
-.button {
-    margin: 0 auto;
-    float: left;
-    position: relative;
-    height: 393px;
-    width: 393px;
-    border: 2px solid white;
-    
 }
 
 .start-button {
@@ -60,17 +94,6 @@ body {
     border: 2px solid #c11111;
 }
 
-
-.powerText {
-   margin:0;
-   padding-right: 200px;
-}
-
-.strictText {
-   margin:0;
-   padding-left: 200px;
-}
-
 #turn {
     height: 22px;
     width: 50px;
@@ -78,36 +101,4 @@ body {
     background-color: black;
     margin-left: 143px;
     border: 2px solid #c11111;
-}
-
-#upperLeft{
-    background-color: green;
-    border-radius: 100% 0 0 0;
-}
-
-#upperRight{
-    background-color: darkred;
-    border-radius: 0 100% 0 0;
-}
-
-#bottomLeft{
-    background-color: olive;
-    border-radius: 0 0 0 100%;
-}
-
-#bottomRight{
-    background-color: darkblue;
-    border-radius: 0 0 100% 0;
-}
-
-.menu {
-    height: 340px;
-    width: 340px;
-    border-radius: 50%;
-    background-color: grey;
-    position: absolute;
-    top: 28%;
-    left: 27%;
-    border: 7px double black;
-    text-align: center;
 }
