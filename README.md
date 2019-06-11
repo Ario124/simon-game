@@ -96,4 +96,12 @@ I've also used Bootstrap and Google Fonts.
 
 ## Media
 
+#### Sound used
+
+The 4 sound files for the game buttons come from link given in Slack
+* https://s3.amazonaws.com/freecodecamp/simonSound1.mp3
+* https://s3.amazonaws.com/freecodecamp/simonSound2.mp3
+* https://s3.amazonaws.com/freecodecamp/simonSound3.mp3
+* https://s3.amazonaws.com/freecodecamp/simonSound4.mp3
+
 ## Credits
