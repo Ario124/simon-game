@@ -38,7 +38,7 @@ body {
 }
 
 #uLeft{
-    background-color: green;
+    background-color: darkgreen;
     border-radius: 100% 0 0 0;
 }
 
@@ -95,11 +95,11 @@ body {
 }
 
 #sum {
-    height: 31px;
-    width: 50px;
+    height: 35px;
+    width: 62px;
     color: white;
     background-color: black;
-    margin-left: 140px;
+    margin-left: 134px;
     border: 2px solid #9c95b7;
     border-radius: 20%;
     color: red;
