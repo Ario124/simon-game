@@ -114,3 +114,113 @@ body {
     padding-left: 30px;
     padding-right: 30px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    
+    h3 {
+        font-size: 9px;
+        margin-top: 0;
+    }
+    
+    #sum {
+        margin-left: 67px;
+        margin-top: -10px;
+    }
+    
+    .game {
+        width: 400px;
+        height: 400px;
+        margin-top: 30px;
+    }
+    
+    .game-button {
+        width: 190px;
+        height: 190px;
+    }
+    
+    .menu {
+        width: 205px;
+        height: 205px;
+        top: 21%;
+        left:  21%;
+    }
+    
+    .title {
+        font-size: 45px;
+    }
+    
+    .boxe {
+        width: 19px;
+        height: 19px;
+    }
+    
+    .start-button {
+        width: 79px;
+        height: 39px;
+        font-size: inherit;
+        margin-top: 0;
+    }
+    
+    .buttonsplace {
+        margin-top: -16px;
+        margin-left: 16px;
+    }
+    
+    
+    .fa-5x {
+        font-size: 4em !important;
+    }
+    
+    .fa-question {
+        margin-left: 91% !important;
+        top: 84px !important;
+    }
+ 
+     .contactlink {
+         font-size: 13px !important;
+     }   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contactlink {
+    font-size: 40px;
+}
+
+.fa-question {
+    margin-left: 69%;
+    position: absolute;
+    color: #ece3e3db;
+}
+
+.fa-5x {
+    font-size: 7em;
+}

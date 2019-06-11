@@ -212,7 +212,7 @@ function checkUp(){
     if (playerAssortment[playerAssortment.length - 1] !== assortment[playerAssortment.length -1])
     doingGood = false;
     
-    if (playerAssortment.length == 3 && doingGood) {
+    if (playerAssortment.length == 20 && doingGood) {
         gameVictory();
     }
     

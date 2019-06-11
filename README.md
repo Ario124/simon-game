@@ -81,6 +81,10 @@ I've also used Bootstrap and Google Fonts.
 
 ## Testing
 
+#### Validation
+
+
+
 #### Testing game functions
 
 1. Click "ON/OFF" to start the game and see if the game is responsive.
@@ -105,3 +109,4 @@ The 4 sound files for the game buttons come from link given in Slack
 * https://s3.amazonaws.com/freecodecamp/simonSound4.mp3
 
 ## Credits
+
