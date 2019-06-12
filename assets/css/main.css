@@ -115,9 +115,18 @@ body {
     padding-right: 30px;
 }
 
+.navbar-toggle {
+    float: none;
+    background-color: #333;
+}
 
+.navbar-inverse {
+    background-color: inherit;
+}
 
-
+.navbar-nav {
+    margin: 0.5px -15px;
+}
 
 
 
@@ -136,30 +145,29 @@ body {
     }
     
     #sum {
-        margin-left: 67px;
+        margin-left: 60px;
         margin-top: -10px;
     }
     
     .game {
         width: 400px;
         height: 400px;
-        margin-top: 30px;
     }
     
     .game-button {
-        width: 190px;
-        height: 190px;
+        width: 175px;
+        height: 175px;
     }
     
     .menu {
-        width: 205px;
-        height: 205px;
-        top: 21%;
-        left:  21%;
+        width: 195px;
+        height: 195px;
+        top: 20%;
+        left: 19%;
     }
     
     .title {
-        font-size: 45px;
+        font-size: 43px;
     }
     
     .boxe {
@@ -185,13 +193,26 @@ body {
     }
     
     .fa-question {
-        margin-left: 91% !important;
+        margin-left: 82% !important;
         top: 84px !important;
     }
- 
-     .contactlink {
-         font-size: 13px !important;
-     }   
+     .navbar-inverse {
+         width: 90px;
+     }
+     .navbar-inverse .navbar-toggle:hover {
+         margin: 10px;
+     }
+     .navbar-inverse .navbar-toggle {
+         margin: 10px;
+     }
+     .navbar-inverse .navbar-collapse {
+         margin: 10px;
+     }
+     
+     .modal-open .modal {
+        display: block;
+        width: 375px;
+     }
 }
 
 
@@ -208,16 +229,9 @@ body {
 
 
 
-
-
-
-.contactlink {
-    font-size: 40px;
-}
 
 .fa-question {
     margin-left: 69%;
-    position: absolute;
     color: #ece3e3db;
 }
 
