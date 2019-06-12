@@ -213,6 +213,12 @@ body {
         display: block;
         width: 375px;
      }
+     
+     .form-control {
+         width: 85%;
+         margin-left: 27px;
+         display: inherit;
+     }
 }
 
 
