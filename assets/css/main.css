@@ -22,8 +22,8 @@ body {
             
 .game {
     margin: 0 auto;
-    width: 800px;
-    height: 800px;
+    width: 700px;
+    height: 700px;
     border-radius: 50%;
     position: relative;
 }
@@ -32,8 +32,8 @@ body {
     margin: 0 auto;
     float: left;
     position: relative;
-    height: 393px;
-    width: 393px;
+    height: 350px;
+    width: 350px;
     border: 2px solid white;
 }
 
@@ -65,8 +65,8 @@ body {
     border-radius: 50%;
     background-color: grey;
     position: absolute;
-    top: 28%;
-    left: 27%;
+    top: 26%;
+    left: 25%;
     border: 7px double black;
     text-align: center;
 }
@@ -128,16 +128,29 @@ body {
     margin: 0.5px -15px;
 }
 
+.text-center {
+    color: #ff8942e8;
+}
+
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #2b2626;
+    color: white;
+    margin-top: 20px;
+}
+
+.form-control {
+    width: 75%;
+    margin-left: 13%;
+}
 
 
 
+            /*==========MOBILE============*/
 
-
-
-
-
-
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     
     h3 {
         font-size: 9px;
@@ -179,7 +192,7 @@ body {
         width: 79px;
         height: 39px;
         font-size: inherit;
-        margin-top: 0;
+        margin-top: -5px;
     }
     
     .buttonsplace {
@@ -222,12 +235,54 @@ body {
 }
 
 
+            /*==========TABLET============*/
 
 
 
 
-
-
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    h3 {
+        font-size: 13px;
+    }
+    
+    .title {
+        font-size: 60px;
+    }
+    
+    .game {
+        width: 600px;
+        height: 600px;
+        bottom: 60px;
+    }
+    
+    .game-button {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .menu {
+        width: 300px;
+        height: 300px;
+        top: 25%;
+        left: 24%;
+    }
+    
+    .fa-question {
+        margin-left: 85% !important;
+    }
+    
+    .buttonsplace {
+        margin-top: -16px;
+       margin-left: 16px;
+    }
+    
+    #sum {
+        margin-left: 113px;
+        margin-top: 0;
+    }
+    
+}
 
 
 

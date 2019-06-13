@@ -19,6 +19,7 @@ let powerOn = false;
 
 const uLeft = document.getElementById("uLeft");
 const uRight = document.getElementById("uRight");
+
 const bLeft = document.getElementById("bLeft");
 const bRight = document.getElementById("bRight");
 
@@ -32,12 +33,10 @@ const startingButton = document.getElementById("start");
 
 
 
-
-
-powerOnButton.addEventListener("click", function(){
+powerOnButton.addEventListener("click", function(){                 // Event listener to see if user checks the box
     if (powerOnButton.checked == true){
         powerOn = true;
-        roundSum.innerHTML = "ON";
+        roundSum.innerHTML = "ON";                                  // The round Display appears as "ON" to let the user know game is on
     } else {
         powerOn = false;
         roundSum.innerHTML = "";
@@ -60,7 +59,6 @@ startingButton.addEventListener("click", function(){
     }
 });
 
-
 function playGame(){
     victory = false;
     assortment = [];
@@ -76,7 +74,7 @@ function playGame(){
          assortment.push(Math.floor(Math.random() * 4) +1);
      }
      gameTurn = true;
-     playTime = setInterval(gamesTurn, 800);
+     playTime = setInterval(gamesTurn, 600);
 }
 
 function gamesTurn(){
@@ -97,7 +95,7 @@ function gamesTurn(){
             if (assortment[blink] == 3) third();
             if (assortment[blink] == 4) fourth();
             blink++;
-        }, 300);
+        }, 200);
     }
     
 }
@@ -138,21 +136,12 @@ function fourth(){
     bRight.style.backgroundColor = "lightskyblue";
 }
 
-
 function resetColor() {
     uLeft.style.backgroundColor = "darkgreen";
     uRight.style.backgroundColor = "darkred";
     bLeft.style.backgroundColor = "olive";
     bRight.style.backgroundColor = "darkblue";
 }
-
-function blinkColor() {
-    uLeft.style.backgroundColor = "lightgreen";
-    uRight.style.backgroundColor = "salmon";
-    bLeft.style.backgroundColor = "yellow";
-    bRight.style.backgroundColor = "lightskyblue";
-}
-
 
 uLeft.addEventListener("click", function() {
     if (powerOn && turn) {
@@ -163,7 +152,7 @@ uLeft.addEventListener("click", function() {
         if(!victory) {
             setTimeout(() => {
                 resetColor();
-            }, 300);
+            }, 200);
         }
     }
 });
@@ -176,7 +165,7 @@ uRight.addEventListener("click", function() {
         if(!victory) {
             setTimeout(() => {
                 resetColor();
-            }, 300);
+            }, 200);
         }
     }
 });
@@ -189,7 +178,7 @@ bLeft.addEventListener("click", function() {
         if(!victory) {
             setTimeout(() => {
                 resetColor();
-            }, 300);
+            }, 200);
         }
     }
 });
@@ -202,17 +191,16 @@ bRight.addEventListener("click", function() {
         if(!victory) {
             setTimeout(() => {
                 resetColor();
-            }, 300);
+            }, 200);
         }
     }
 });
-
 
 function checkUp(){
     if (playerAssortment[playerAssortment.length - 1] !== assortment[playerAssortment.length -1])
     doingGood = false;
     
-    if (playerAssortment.length == 20 && doingGood) {
+    if (playerAssortment.length == 20 && doingGood) {          //If player on round 20 and without fail then player wins!
         gameVictory();
     }
     
@@ -226,24 +214,33 @@ function checkUp(){
             if(strictMode) {
                 playGame();
             } else {
-                gameTurn = true;
-                blink; 0;
-                playerAssortment = [];
+                round();
                 doingGood = true;
-                playTime = setInterval(gamesTurn, 800);
             }
-        }, 800);
+        }, 1100);
         sound = false;
     }
     
     if (turn == playerAssortment.length && doingGood && !victory) {
         turn++;
-        playerAssortment = [];
-        gameTurn = true;
-        blink = 0;
+        round();
         roundSum.innerHTML = turn;
-        playTime = setInterval(gamesTurn, 800);
+
     }
+}
+
+function round() {
+    blink = 0;
+    playerAssortment = [];
+    gameTurn = true;
+    playTime = setInterval(gamesTurn, 600);
+}
+
+function blinkColor() {
+    uLeft.style.backgroundColor = "lightgreen";
+    uRight.style.backgroundColor = "salmon";
+    bLeft.style.backgroundColor = "yellow";
+    bRight.style.backgroundColor = "lightskyblue";
 }
 
 function gameVictory(){
