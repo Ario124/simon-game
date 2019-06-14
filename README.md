@@ -8,6 +8,16 @@ the user will have to repeat the same moves afterwards which gets difficult afte
 
 ## UX
 
+
+Instructions for the game can be found on the main page for the game by clicking on the question mark.
+
+The game design consists of four colored game pads and a menu with buttons, all these are placed in the middle of the screen.
+
+* Green     -  This dark green colored button is located in the top left corner of the game platform.
+* Red       -  This dark red colored button is located in the top right corner of the game platform.
+* Yellow    -  This olive colored button is located in the bottom left corner of the game platform.
+* Blue      -  This dark blue colored button is located in the bottom right corner of the game platform.
+
 The game itself will only start once the user (player) clicks to check the "ON/OFF" button, then procceeds to click on the "START" button located in the middle of the Simon Game platform.
 Once "START" has been activated, the game will begin by flashing and highlighting one of the four different colored buttons.
 If the user clicks on the correct button, the game will go on to the next level and continue until level 20 which is the last level. Victory is only granted once 20 levels have been cleared.
@@ -17,7 +27,10 @@ will make the game reset and get back to level 1.
 
 ### Wireframes/Mockups
 
-[Simon Mobile](/assets/Wireframe/simon_mobile2.png)
+* [Simon Mobile](https://github.com/Ario124/simon-game/blob/master/assets/Wireframe/simon_mobile2.png?raw=true)
+* [Simon Tablet](https://github.com/Ario124/simon-game/blob/master/assets/Wireframe/simon-tablet2.png?raw=true)
+* [Simon Desktop](https://github.com/Ario124/simon-game/blob/master/assets/Wireframe/simon-desktop2.png?raw=true)
+* [Simon Contact Page](https://github.com/Ario124/simon-game/blob/master/assets/Wireframe/Contact%20page.png?raw=true)
 
 
 ### User Stories
@@ -63,10 +76,10 @@ These are the game features that users will interact with.
 * User will get a message letting you know if the attempt to match the colors has failed.
 * When victory is granted, users will get a "WIN" message.
 
-### Features left to implement
-* Navbar
-* Contact page, possibly with emailjs
-* Info with play instructions
+### Features that could be implemented
+* Highscore
+* Increse difficulty beyond strict
+* Improve user friendliness.
 
 
 ## Logics of the game
@@ -100,9 +113,23 @@ I've also used Bootstrap and Google Fonts.
 
 ## Testing
 
+These test are to make sure that the game and the website itself is working good.
+Main focus for devices iPhone 6/7/8, Tablet and Desktop.
+
+* Media queries tested through Google Chrome Dev Tools, Also tested on Samsung Galaxy S8 & Samsung Galaxy S9.
+
+
 #### Validation
 
+* HTML tested through [HTML Validator](https://validator.w3.org/)
+* CSS tested through [CSS Validator](https://jigsaw.w3.org/css-validator/)
 
+
+#### Testing website
+
+1. Navbar should be responsive when clicking on "Home" or "Contact" this should be marked with a darker color to let the user know which window is being viewed.
+2. Contact page has a form that can be filled. I have tested it and it works without problems, once "send message" has been clicked on, it activates the submit of mail(EMAILJS)
+3. 
 
 #### Testing game functions
 
@@ -111,9 +138,24 @@ I've also used Bootstrap and Google Fonts.
 3. Verify that you can't start clicking the colors after "ON" is displayed. This should happen once "START" is activated.
 4. Verify that you can click on the colors once "START" has been clicked.
 3. Display shows the game level once the "START" button is activated.
-4. Verify that the game has its first round.
+4. Verify that the game has its first round, before the players turn.
 5. Once the game has started, sound should match the blinking lights from the selected colors.
 6. Verify so the game only start by playing off 1 blink and not more. This should increase by 1 every level.
+7. Click on the question mark to verify that it activates the modal that pops up with game instructions.
+8. Close the modal by clicking on the background, or by either clicking on "Got it" or by closing the modal by the top right corner.
+9. Verify that the game sends out the message "Wrong" when the player fails to match the colors.
+10. Verify that once the player is on level 20 and wins, message "Victory" should appear.
+
+These test are tested and approved by me.
+The game works well and is responsive. I have tested the game on my mobile device SGS8 and my Laptop (Windows 10)
+
+
+#### Problems to be solved
+
+* The game blinking/sounds can be troublesome when the speed of the blinks is played on a faster rate than usual. On some turns you might see the color blink but the sound will not play,
+since if it happens to play the same color twice in a row, the sound will not play because of the speed the game is set to. I chose to keep it this way because the game is more challenging.
+
+A solution could be to somehow make the sound play on faster repeated rates.
 
 ## Deployment
 
@@ -131,6 +173,6 @@ The 4 sound files for the game buttons come from link given in Slack
 
 ## Credits
 
-* Ideas to write the README file come from [Slack](https://code-institute-room.slack.com) and [Github](https://github.com/Code-Institute-Submissions/Simon-Game-13)
-* I did a lot of research on how to get the game working using JS. I learned much by viewing other projects and also from [Youtube](https://www.youtube.com/)
+* Ideas to write the README file as well as for the coding of logic come from [Slack](https://code-institute-room.slack.com) and [Github](https://github.com/Code-Institute-Submissions/Simon-Game-13)
+* I did a lot of research on how to get the game working using JS. I learned very much with the help of my tutor Juan Monetti and by viewing other projects and also from [Youtube](https://www.youtube.com/)
 

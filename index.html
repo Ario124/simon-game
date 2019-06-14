@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
@@ -11,38 +11,39 @@
         <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
         <title>Simon Game</title>
         
-        <!---=======AUDIO FILES WITH ID TO CALL ON ACTION=======--->
+        <!---------AUDIO FILES WITH ID TO CALL ON ACTION------->
         
         <audio id="simonsound1">
-            <source src="assets/audio/simonSound1.mp3"></source>
+            <source src="assets/audio/simonSound1.mp3">
         </audio>
         <audio id="simonsound2">
-            <source src="assets/audio/simonSound2.mp3"></source>
+            <source src="assets/audio/simonSound2.mp3">
         </audio>
         <audio id="simonsound3">
-            <source src="assets/audio/simonSound3.mp3"></source>
+            <source src="assets/audio/simonSound3.mp3">
         </audio>
         <audio id="simonsound4">
-            <source src="assets/audio/simonSound4.mp3"></source>
+            <source src="assets/audio/simonSound4.mp3">
         </audio>
     </head>
+    
     <body>
         
         <nav class="fixed-navbar navbar-inverse">
-          <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
-                <span class="icon-bar"></span> 
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-          </div>
-              <div class="collapse navbar-collapse" id="mainNavBar">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainNavBar">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-              </div>
-      </nav>
+            </div>
+        </nav>
         
         
         <div>
@@ -51,32 +52,32 @@
         <div><i data-toggle = "modal" data-target="#myModal" class="fa fa-question fa-5x" id ="instructions"></i></div>
         
         
-  <div class="modal fade" id="myModal" role="dialog">
-      <div class="modal-dialog">
-  
-          <div class="modal-content">
-              <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Game Instructions</h4>
-              </div>
-              <div class="modal-body">
-                  <p>1. Check the "ON/OFF" box.</p>
-                  <p>2. Increase game difficulty by checking the "Strict" box to choose Strict Mode.</p>
-                  <p>3. Click on "Start"</p>
-                  <p>4. Once "Start" has been activated the game will begin.</p>
-                  <p>5. Your challenge is to match the blinking colors in the right order.</p>
-                  <p>6. To win the game you have to go through all 20 levels.</p>
-              </div>
-              <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Got it</button>
-              </div>
-          </div>
-      </div>
-  </div>
+        <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Game Instructions</h4>
+                </div>
+                <div class="modal-body">
+                    <p>1. Check the "ON/OFF" box.</p>
+                    <p>2. Increase game difficulty by checking the "Strict" box to choose Strict Mode.</p>
+                    <p>3. Click on "Start"</p>
+                    <p>4. Once "Start" has been activated the game will begin.</p>
+                    <p>5. Your challenge is to match the blinking colors in the right order.</p>
+                    <p>6. To win the game you have to go through all 20 levels.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Got it</button>
+                </div>
+            </div>
+        </div>
+        </div>
         
         
         
-        <!---=======SIMON GAME PLATFORM=======--->
+        <!---------SIMON GAME PLATFORM------->
         <div class="container-fluid">
             <div class="game">
                 <div class="game-button" id="uLeft"></div>
