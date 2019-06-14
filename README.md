@@ -123,13 +123,21 @@ Main focus for devices iPhone 6/7/8, Tablet and Desktop.
 
 * HTML tested through [HTML Validator](https://validator.w3.org/)
 * CSS tested through [CSS Validator](https://jigsaw.w3.org/css-validator/)
+* Javascript tested through [JS Validator](http://esprima.org/demo/validate.html)
 
+#### Browsers
+
+* Google Chrome
+* Internet Explorer
+* Microsoft Edge
+* Mozilla Firefox
 
 #### Testing website
 
 1. Navbar should be responsive when clicking on "Home" or "Contact" this should be marked with a darker color to let the user know which window is being viewed.
 2. Contact page has a form that can be filled. I have tested it and it works without problems, once "send message" has been clicked on, it activates the submit of mail(EMAILJS)
-3. 
+3. Load the page on Chrome and open Chrome tools to check for errors.
+4. Load the page on different resolutions for Mobile, Tablet and Desktop and verify that queries are working.
 
 #### Testing game functions
 
@@ -159,7 +167,18 @@ A solution could be to somehow make the sound play on faster repeated rates.
 
 ## Deployment
 
+The deployment for this project was done through Github.
 
+1. Firstly I make sure to create a repository called simon-game, this can be done through Github.
+2. Proceed to make a Push from the local repository to a remote one.
+3. Commands used are as follows: "git remote add origin https://github.com/ario124/simon-game.git" Followed by "git push -u origin master"
+4. Go to the simon-game repository in Github, proceed to click on the settings button that is located on the top right inside simon-game repository.
+5. Once inside the settings menu, scroll downwards till you find "Github Pages"
+6. Under "Source" you can find a menu where we change from "None" to "Master Branch"
+7. After that is done you should recieve a message like this "Your site is published at https://ario124.github.io/simon-game/"
+8. Check to see if the link is working (may take some time to get it started).
+
+By following these steps you should successfully manage with the Deployment of the project.
 
 ## Media
 

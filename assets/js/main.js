@@ -1,9 +1,9 @@
 //List of the main content that will be used through 'let' and 'const'
 
-let blink;
+let blink;                      // For blinking the game pads
 let turn;
-let doingGood;
-let victory;
+let doingGood;                  //Checks to see if player is doing well without failure.
+let victory;                    // For when the player wins the game.
 let gameTurn;
 let playTime;
 
@@ -45,7 +45,7 @@ powerOnButton.addEventListener("click", function(){                 // Event lis
     }
 });
 
-strictModeButton.addEventListener("click", function(){
+strictModeButton.addEventListener("click", function(){              // Strict Mode goes true if box checked
     if (strictModeButton.checked == true) {
         strictMode = true;
     } else {
@@ -59,7 +59,7 @@ startingButton.addEventListener("click", function(){
     }
 });
 
-function playGame(){
+function playGame(){                                                // Main function for the game, this contains most of whats needed to run the game, including the loop to randomly generate numbers 1-4.
     victory = false;
     assortment = [];
     playerAssortment =[];
@@ -95,7 +95,7 @@ function gamesTurn(){
             if (assortment[blink] == 3) third();
             if (assortment[blink] == 4) fourth();
             blink++;
-        }, 200);
+        }, 250);
     }
     
 }
@@ -136,7 +136,7 @@ function fourth(){
     bRight.style.backgroundColor = "lightskyblue";
 }
 
-function resetColor() {
+function resetColor() {                                                 // This will reset all 4 game pads to original color.
     uLeft.style.backgroundColor = "darkgreen";
     uRight.style.backgroundColor = "darkred";
     bLeft.style.backgroundColor = "olive";
@@ -152,7 +152,7 @@ uLeft.addEventListener("click", function() {
         if(!victory) {
             setTimeout(() => {
                 resetColor();
-            }, 200);
+            }, 250);
         }
     }
 });
@@ -165,7 +165,7 @@ uRight.addEventListener("click", function() {
         if(!victory) {
             setTimeout(() => {
                 resetColor();
-            }, 200);
+            }, 250);
         }
     }
 });
@@ -178,7 +178,7 @@ bLeft.addEventListener("click", function() {
         if(!victory) {
             setTimeout(() => {
                 resetColor();
-            }, 200);
+            }, 250);
         }
     }
 });
@@ -191,12 +191,12 @@ bRight.addEventListener("click", function() {
         if(!victory) {
             setTimeout(() => {
                 resetColor();
-            }, 200);
+            }, 250);
         }
     }
 });
 
-function checkUp(){
+function checkUp(){                                             // Checks to see if player is doing good or if player has failed.
     if (playerAssortment[playerAssortment.length - 1] !== assortment[playerAssortment.length -1])
     doingGood = false;
     
@@ -236,14 +236,14 @@ function round() {
     playTime = setInterval(gamesTurn, 600);
 }
 
-function blinkColor() {
+function blinkColor() {                                         //This is going to lighten the original colors to make it appear as the colors blink
     uLeft.style.backgroundColor = "lightgreen";
     uRight.style.backgroundColor = "salmon";
     bLeft.style.backgroundColor = "yellow";
     bRight.style.backgroundColor = "lightskyblue";
 }
 
-function gameVictory(){
+function gameVictory(){                                         //This function is for when the player has won. It will reset the game after set time.
     blinkColor();
     roundSum.innerHTML = "Victory!";
     powerOn = false;
