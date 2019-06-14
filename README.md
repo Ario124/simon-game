@@ -1,4 +1,4 @@
-# Simon Game
+# [Simon Game](https://simon-game-ario124-1.c9users.io/index.html)
 
 The idea behind this project is to make a Simon Game for the second milestone project.
 This is a basic game that you can play and test your memory with.
@@ -15,10 +15,19 @@ If the user clicks on the correct button, the game will go on to the next level 
 The game will let the user try to get the right order of flashes endlessly, unless the "STRICT" button has been activated. If activated and if the user then fails to match the flashes, it
 will make the game reset and get back to level 1.
 
+### Wireframes/Mockups
+
+[Simon Mobile](/assets/Wireframe/simon_mobile2.png)
+
+
 ### User Stories
 
 #### User story 1
 
+
+* As a user I can navigate thorugh the menu.
+* As a user I can easily get to the "Contact" page through the navigation bar.
+* As a user I can fill out the form and submit a message.
 * As a user I can click "ON/OFF" to turn the game ON or to turn the game OFF.
 * As a user I am presented with a nice and clean game design.
 * As a user I am presented with a display that shows if the game is ON.
@@ -32,6 +41,15 @@ will make the game reset and get back to level 1.
 
 
 ## Features
+
+#### Website Features
+
+Features that the website offers
+
+* Users can use the navigation bar
+* Users can fill a form and submit it to get in touch thorugh mail.
+* Users can click on the question mark to get game instructions (Index.html)
+
 #### Game Features
 
 These are the game features that users will interact with.
@@ -56,7 +74,7 @@ These are the game features that users will interact with.
 
 The game is designed to be simple and and easy to understand.
 
-* Game will wait until Start has been clicked then procceed to control if the game is ON or if Victory has been achieved.
+* Game will wait until Start has been clicked, then procceed to control if the game is ON or if Victory has been achieved.
 * If the power is ON and or if Victory has been achieved then the game will run "playGame" Function.
 * The game will then generate 20 random numbers from 1-4 to go through.
 * Checkup is active during player turn to see if the player matches accurately with the game round.
@@ -78,6 +96,7 @@ I've also used Bootstrap and Google Fonts.
 * Javascript
 * Bootstrap
 * Google Fonts
+* EmailJS
 
 ## Testing
 
@@ -98,15 +117,20 @@ I've also used Bootstrap and Google Fonts.
 
 ## Deployment
 
+
+
 ## Media
 
 #### Sound used
 
 The 4 sound files for the game buttons come from link given in Slack
-* https://s3.amazonaws.com/freecodecamp/simonSound1.mp3
-* https://s3.amazonaws.com/freecodecamp/simonSound2.mp3
-* https://s3.amazonaws.com/freecodecamp/simonSound3.mp3
-* https://s3.amazonaws.com/freecodecamp/simonSound4.mp3
+* [First](https://s3.amazonaws.com/freecodecamp/simonSound1.mp3)
+* [Second](https://s3.amazonaws.com/freecodecamp/simonSound2.mp3)
+* [Third](https://s3.amazonaws.com/freecodecamp/simonSound3.mp3)
+* [Forth](https://s3.amazonaws.com/freecodecamp/simonSound4.mp3)
 
 ## Credits
+
+* Ideas to write the README file come from [Slack](https://code-institute-room.slack.com) and [Github](https://github.com/Code-Institute-Submissions/Simon-Game-13)
+* I did a lot of research on how to get the game working using JS. I learned much by viewing other projects and also from [Youtube](https://www.youtube.com/)
 

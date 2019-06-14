@@ -146,6 +146,9 @@ body {
     margin-left: 13%;
 }
 
+.btn:hover {
+    color: #24bb38;
+}
 
 
             /*==========MOBILE============*/
