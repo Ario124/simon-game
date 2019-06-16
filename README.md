@@ -134,10 +134,11 @@ Main focus for devices iPhone 6/7/8, Tablet and Desktop.
 
 #### Testing website
 
-1. Navbar should be responsive when clicking on "Home" or "Contact" this should be marked with a darker color to let the user know which window is being viewed.
+1. Navbar should be responsive, when I click on "Home" or "Contact" this should be marked with a darker color to let the user know which window is being viewed.
 2. Contact page has a form that can be filled. I have tested it and it works without problems, once "send message" has been clicked on, it activates the submit of mail(EMAILJS)
 3. Load the page on Chrome and open Chrome tools to check for errors.
 4. Load the page on different resolutions for Mobile, Tablet and Desktop and verify that queries are working.
+5. Load Contact.html and click on "Send Message" without filling the form. A message will appear letting the user know that the form has to be filled before submission.
 
 #### Testing game functions
 

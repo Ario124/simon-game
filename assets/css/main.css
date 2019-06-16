@@ -289,11 +289,6 @@ body {
 
 
 
-
-
-
-
-
 .fa-question {
     margin-left: 69%;
     color: #ece3e3db;
@@ -301,4 +296,16 @@ body {
 
 .fa-5x {
     font-size: 7em;
+}
+
+.fa-volume-up {
+    position: absolute;
+    margin-left: 63%;
+    color: #ece3e3db;
+}
+
+.fa-volume-off {
+    position: absolute;
+    margin-left: 63%;
+    color: #252525;
 }

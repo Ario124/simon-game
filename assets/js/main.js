@@ -14,6 +14,7 @@ let playerAssortment = [];
 let sound = true;
 let strictMode = false;
 let powerOn = false;
+let volumeOn = true;
 
 //These are the 4 main Colored buttons for the game!
 
@@ -30,8 +31,20 @@ const roundSum = document.getElementById("sum");
 const strictModeButton = document.getElementById("strict");
 const powerOnButton = document.getElementById("activateOn");
 const startingButton = document.getElementById("start");
+const volume = document.getElementById("volume");
 
 
+volume.addEventListener("click", function () {                  // This will activate mute if player clicks on the Volume icon.
+    if (sound) {
+        volumeOn = false;
+        this.classList.toggle("fa-volume-up");
+        this.classList.toggle("fa-volume-off");
+    } else {
+        volumeOn = true;
+        this.classList.toggle("fa-volume-up");
+        this.classList.toggle("fa-volume-off");
+    }
+});
 
 powerOnButton.addEventListener("click", function(){                 // Event listener to see if user checks the box
     if (powerOnButton.checked == true){
@@ -100,40 +113,56 @@ function gamesTurn(){
     
 }
 
-function first(){
-    if (sound) {
-        let audio = document.getElementById("simonsound1");
+function first(){ 
+    if (volumeOn) {                                                         // This will activate sound for the game pads, it will also deactivate if player has chosen to mute.
+        let audio = document.getElementById("simonsound1");     
         audio.play();
     }
     sound = true;
     uLeft.style.backgroundColor = "lightgreen";
+    
+        if (volumeOn == false) {
+        sound = false;
+    }
 }
 
 function second(){
-    if (sound) {
+    if (volumeOn) {
         let audio = document.getElementById("simonsound2");
         audio.play();
     }
     sound = true;
     uRight.style.backgroundColor = "salmon";
+    
+        if (volumeOn == false) {
+        sound = false;
+    }
 }
 
 function third(){
-    if (sound) {
+    if (volumeOn) {
         let audio = document.getElementById("simonsound3");
         audio.play();
     }
     sound = true;
     bLeft.style.backgroundColor = "yellow";
+    
+        if (volumeOn == false) {
+        sound = false;
+    }
 }
 
 function fourth(){
-    if (sound) {
+    if (volumeOn) {
         let audio = document.getElementById("simonsound4");
         audio.play();
     }
     sound = true;
     bRight.style.backgroundColor = "lightskyblue";
+    
+    if (volumeOn) {
+        sound = false;
+    }
 }
 
 function resetColor() {                                                 // This will reset all 4 game pads to original color.
@@ -197,8 +226,9 @@ bRight.addEventListener("click", function() {
 });
 
 function checkUp(){                                             // Checks to see if player is doing good or if player has failed.
-    if (playerAssortment[playerAssortment.length - 1] !== assortment[playerAssortment.length -1])
-    doingGood = false;
+    if (playerAssortment[playerAssortment.length - 1] !== assortment[playerAssortment.length -1]) {    // With this we check to see for the saved values with .length
+        doingGood = false;   
+    }
     
     if (playerAssortment.length == 20 && doingGood) {          //If player on round 20 and without fail then player wins!
         gameVictory();
