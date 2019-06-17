@@ -10,6 +10,7 @@ the user will have to repeat the same moves afterwards which gets difficult afte
 
 
 Instructions for the game can be found on the main page for the game by clicking on the question mark.
+Mute sound by clicking the sound icon.
 
 The game design consists of four colored game pads and a menu with buttons, all these are placed in the middle of the screen.
 
@@ -164,7 +165,7 @@ Main focus for devices iPhone 6/7/8, Tablet and Desktop.
 These test are tested and approved by me.
 The game works well and is responsive. I have tested the game on my mobile device SGS8 and my Laptop (Windows 10)
 
-##### Jasmine
+#### Jasmine
 
 
 
