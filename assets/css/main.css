@@ -14,7 +14,7 @@ body {
     font-weight: 600;
     font-size: 65px;
     margin-bottom: 30px;
-    color: black;
+    color: white;
 }
 
             /*==========GAME BUTTONS============*/
@@ -26,6 +26,7 @@ body {
     height: 700px;
     border-radius: 50%;
     position: relative;
+    bottom: 33px;
 }
 
 .game-button {
@@ -139,6 +140,7 @@ body {
     background-color: #2b2626;
     color: white;
     margin-top: 20px;
+    margin-bottom: 409px;
 }
 
 .form-control {
@@ -150,6 +152,45 @@ body {
     color: #24bb38;
 }
 
+
+          /*==========ICONS============*/
+
+.fa-question {
+    margin-left: 69%;
+    color: white;
+}
+
+.fa-volume-up {
+    position: absolute;
+    margin-left: 65%;
+    color: white;
+}
+
+.fa-volume-off {
+    position: absolute;
+    margin-left: 65%;
+    color: #00000087;
+}
+
+          /*==========FOOTER============*/
+
+.footer-area {
+    background-color: #252323;
+    width:100%;
+    height:75px;
+    position: absolute;
+    border-top: 2px solid #c78918;
+}
+
+.footer-text {
+    color:#f7b537;
+    font-family: "Cinzel", sans-serif;
+    text-align: center;
+}
+
+.fa-github {
+    padding-left: 20px;
+}
 
             /*==========MOBILE============*/
 
@@ -168,6 +209,7 @@ body {
     .game {
         width: 400px;
         height: 400px;
+        bottom: 26px;
     }
     
     .game-button {
@@ -184,6 +226,7 @@ body {
     
     .title {
         font-size: 43px;
+        color: white;
     }
     
     .boxe {
@@ -201,11 +244,6 @@ body {
     .buttonsplace {
         margin-top: -16px;
         margin-left: 16px;
-    }
-    
-    
-    .fa-5x {
-        font-size: 4em !important;
     }
     
     .fa-question {
@@ -235,6 +273,29 @@ body {
          margin-left: 27px;
          display: inherit;
      }
+     
+     .fa-volume-up {
+         color: white !important;
+         margin-left: 78% !important;
+     }
+     
+     .fa-volume-off {
+         color: #d0d0d0 !important;
+         margin-left: 78% !important;
+     }
+     
+     .fa-question {
+         color: white !important;
+         margin-left: 90% !important;
+     }
+     
+     .footer-area {
+         margin-top: 20px;
+     }
+     
+     .center-block {
+         margin-bottom: 110px;
+     }
 }
 
 
@@ -251,12 +312,13 @@ body {
     
     .title {
         font-size: 60px;
+        color: white;
     }
     
     .game {
         width: 600px;
         height: 600px;
-        bottom: 60px;
+        top: 0;
     }
     
     .game-button {
@@ -272,7 +334,7 @@ body {
     }
     
     .fa-question {
-        margin-left: 85% !important;
+        margin-left: 82% !important;
     }
     
     .buttonsplace {
@@ -285,27 +347,19 @@ body {
         margin-top: 0;
     }
     
-}
-
-
-
-.fa-question {
-    margin-left: 69%;
-    color: #ece3e3db;
-}
-
-.fa-5x {
-    font-size: 7em;
-}
-
-.fa-volume-up {
-    position: absolute;
-    margin-left: 63%;
-    color: #ece3e3db;
-}
-
-.fa-volume-off {
-    position: absolute;
-    margin-left: 63%;
-    color: #252525;
+    .fa-volume-up {
+        margin-left: 72% !important;
+        color: #333;
+    }
+    
+    .fa-volume-off {
+        margin-left: 72% !important;
+    }
+    
+    .footer-area {
+        position: fixed !important;
+        margin-top: 43px;
+        bottom: 100px;
+    }
+    
 }

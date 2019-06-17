@@ -110,6 +110,7 @@ I've also used Bootstrap and Google Fonts.
 * Bootstrap
 * Google Fonts
 * EmailJS
+* Jasmine
 
 ## Testing
 
@@ -139,6 +140,9 @@ Main focus for devices iPhone 6/7/8, Tablet and Desktop.
 3. Load the page on Chrome and open Chrome tools to check for errors.
 4. Load the page on different resolutions for Mobile, Tablet and Desktop and verify that queries are working.
 5. Load Contact.html and click on "Send Message" without filling the form. A message will appear letting the user know that the form has to be filled before submission.
+6. Load index.html, start the game and click on the Sound Icon to verify it toggles.
+7. Sound effects are muted when Sound Icon has been activated and the icon has a new darker color.
+8. Sound effects are active when the Sound Icon is clicked back to normal.
 
 #### Testing game functions
 
@@ -155,8 +159,14 @@ Main focus for devices iPhone 6/7/8, Tablet and Desktop.
 9. Verify that the game sends out the message "Wrong" when the player fails to match the colors.
 10. Verify that once the player is on level 20 and wins, message "Victory" should appear.
 
+
+
 These test are tested and approved by me.
 The game works well and is responsive. I have tested the game on my mobile device SGS8 and my Laptop (Windows 10)
+
+##### Jasmine
+
+
 
 
 #### Problems to be solved
