@@ -52,6 +52,8 @@ will make the game reset and get back to level 1.
 * [Strict Mode] As a user who fails to match the colors in the right order, I will be brought back to level 1.
 * I can win the game by getting through all 20 levels.
 * As a user I am notified when victory has been granted.
+* As a user I can click on the sound icon to mute.
+* As a user I can click on the sound icon to unmute.
 
 
 ## Features
@@ -63,6 +65,8 @@ Features that the website offers
 * Users can use the navigation bar
 * Users can fill a form and submit it to get in touch thorugh mail.
 * Users can click on the question mark to get game instructions (Index.html)
+* Users can mute the game by clicking on the sound icon.
+* Users can click on the github icon located by the footer.
 
 #### Game Features
 
@@ -105,13 +109,22 @@ The game is designed to be simple and and easy to understand.
 The site design is for the main part HTML & CSS, logic applied through Javascript.
 I've also used Bootstrap and Google Fonts.
 
-* HTML
-* CSS
-* Javascript
-* Bootstrap
-* Google Fonts
-* EmailJS
-* Jasmine
+* [Balsamiq Mockups 3](https://balsamiq.com/)
+I have used Balsamiq to design the mockups of the website.
+* [HTML](https://en.wikipedia.org/wiki/HTML)
+The core structure of the game comes from the use of HTML.
+* [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+Giving color and life to the website and game, by styling through CSS.
+* [JavaScript](https://www.javascript.com/)
+The game itself is run by executing the functions on JavaScript.
+* [Bootstrap](https://getbootstrap.com/)
+I have used Bootstrap to get the navigation bar working.
+* [Google Fonts](https://fonts.google.com/)
+The website is designed to make use of fonts provided by Google.
+* [EmailJS](https://www.emailjs.com/)
+A Form can be filled and submitted, it is working with the help of EmailJS.
+* [Jasmine](https://jasmine.github.io/)
+To automate basic functionality tests.
 
 ## Testing
 
@@ -138,7 +151,7 @@ Main focus for devices iPhone 6/7/8, Tablet and Desktop.
 
 1. Navbar should be responsive, when I click on "Home" or "Contact" this should be marked with a darker color to let the user know which window is being viewed.
 2. Contact page has a form that can be filled. I have tested it and it works without problems, once "send message" has been clicked on, it activates the submit of mail(EMAILJS)
-3. Load the page on Chrome and open Chrome tools to check for errors.
+3. Load the page on Chrome and open Chrome Dev tools to check for errors.
 4. Load the page on different resolutions for Mobile, Tablet and Desktop and verify that queries are working.
 5. Load Contact.html and click on "Send Message" without filling the form. A message will appear letting the user know that the form has to be filled before submission.
 6. Load index.html, start the game and click on the Sound Icon to verify it toggles.
@@ -159,7 +172,7 @@ Main focus for devices iPhone 6/7/8, Tablet and Desktop.
 8. Close the modal by clicking on the background, or by either clicking on "Got it" or by closing the modal by the top right corner.
 9. Verify that the game sends out the message "Wrong" when the player fails to match the colors.
 10. Verify that once the player is on level 20 and wins, message "Victory" should appear.
-
+11. Load the page on Google Chrome and open Dev tools to verify no major errors are in the way.
 
 
 These test are tested and approved by me.
