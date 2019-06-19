@@ -142,10 +142,10 @@ Main focus for devices iPhone 6/7/8, Tablet and Desktop.
 
 #### Browsers
 
-* Google Chrome
-* Internet Explorer
-* Microsoft Edge
-* Mozilla Firefox
+* [Google Chrome](https://www.google.com/intl/en/chrome/)
+* [Internet Explorer](https://en.wikipedia.org/wiki/Internet_Explorer)
+* [Microsoft Edge](https://www.microsoft.com/en-us/windows/microsoft-edge)
+* [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/)
 
 #### Testing website
 
@@ -178,9 +178,20 @@ Main focus for devices iPhone 6/7/8, Tablet and Desktop.
 These test are tested and approved by me.
 The game works well and is responsive. I have tested the game on my mobile device SGS8 and my Laptop (Windows 10)
 
+#### Test through linter
+
+* I have tested the javascript code using [JSHint](https://jshint.com/) 
+
+As recommended in the pre-submission checklist, I have used JSHint to test my javascript.
+The code passed without major problems.
+
+There were some unnecessary warnings: "'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)."
+This was fixed by going in to the "CONFIGURE" option and under "Assume" check both "New JavaScript features (ES6)" and "Mozilla JavaScript extensions"
+
 #### Jasmine
 
-
+I have learned the basics of jasmine to automate testing.
+Few tests were made to ensure the code runs as planned. 
 
 
 #### Problems to be solved
@@ -189,6 +200,15 @@ The game works well and is responsive. I have tested the game on my mobile devic
 since if it happens to play the same color twice in a row, the sound will not play because of the speed the game is set to. I chose to keep it this way because the game is more challenging.
 
 A solution could be to somehow make the sound play on faster repeated rates.
+
+#### Solved issues
+
+* Load index.html on google chrome, open dev tools. 
+
+The only thing that i had to fix here was this so called "favicon.ico 404 (Not found)" error.
+
+After a bit of research i came to find out that this error is caused when I dont have any icon to be represented in the title bar of the website.
+I was able to fix this by adding a simple line of code at the start of the head tag on index.html and contact.html.
 
 ## Deployment
 
@@ -209,7 +229,7 @@ By following these steps you should successfully manage with the Deployment of t
 
 #### Sound used
 
-The 4 sound files for the game buttons come from link given in Slack
+The 4 sound files for the game buttons come from link given in [Slack](https://code-institute-room.slack.com/archives/C0L316Z96/p1559435111304300?thread_ts=1559434156.303400&cid=C0L316Z96)
 * [First](https://s3.amazonaws.com/freecodecamp/simonSound1.mp3)
 * [Second](https://s3.amazonaws.com/freecodecamp/simonSound2.mp3)
 * [Third](https://s3.amazonaws.com/freecodecamp/simonSound3.mp3)

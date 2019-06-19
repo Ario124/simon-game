@@ -1,11 +1,11 @@
 //List of the main content that will be used through 'let' and 'const'
 
-let blink;                      // For blinking the game pads
-let turn;
-let doingGood;                  //Checks to see if player is doing well without failure.
+let blink;                      // For blinking the game pads.
+let turn;                       // To keep track of turns.
+let doingGood;                  // Checks to see if player is doing well without failure.
 let victory;                    // For when the player wins the game.
-let gameTurn;
-let playTime;
+let gameTurn;                   // To keep track of the computers turn.
+let playTime;                   // To keep track of the time interval.
 
 //Empty arrays for the assortments
 let assortment = [];
